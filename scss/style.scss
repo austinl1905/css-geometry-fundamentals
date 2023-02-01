@@ -128,6 +128,20 @@ body {
     background-color: $panel-color-1;
   }
 
+  .content-border-3 {
+    @include content-border;
+    grid-column: 1/2;
+    grid-row: 7/11;
+    background-color: $panel-color-1;
+  }
+
+  .content-border-4 {
+    @include content-border;
+    grid-column: 2/3;
+    grid-row: 5/9;
+    background-color: $panel-color-1;
+  }
+
   .image-container {
     display: grid;
     grid-template-columns: 50% 50%;
