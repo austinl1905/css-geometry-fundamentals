@@ -71,18 +71,29 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 15px;
-    grid-template-rows: 650px 300px 300px 300px 300px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
     @include content-center;
   }
 
 .container-text {
   margin-bottom: 15px;
+  @include content-center;
+  width: 90%;
+}
+
+#preview-text {
+  @extend .container-text;
   text-align: center;
+}
+
+#preview-text:hover {
+  font-size: 20px;
 }
 
 .code {
   @extend .container-text;
   font-size: 20px;
+  text-align: center;
 }
 
   #heading {
@@ -105,14 +116,14 @@ body {
   .content-border-1 {
     @include content-border;
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 1/7;
     background-color: $panel-color-1;
   }
 
   .content-border-2 {
     @include content-border;
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/5;
     background-color: $panel-color-1;
   }
 
