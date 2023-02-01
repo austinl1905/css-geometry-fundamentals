@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  border-style: dashed;
-}
-
 body {
   height: 100%;
   width: 100%;
   background-color: rgb(180, 225, 240);
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 #navbar {
@@ -43,10 +40,13 @@ ul a:hover {
 }
 
 #content-container {
+  width: 90%;
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 50% 50%;
   gap: 15px;
   grid-template-rows: 300px 300px 300px 300px 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #heading {
