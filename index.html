@@ -10,11 +10,11 @@
     <body>
         <ul id="navbar">
             <li class="ulist">
-              <a href="#scalef">Scale</a>
+              <a href="#scale-function">Scale</a>
               <!--internal link to scale function-->
             </li>
             <li class="ulist">
-              <a href="#hoverh2">Hover</a> <!-- internal link to hover selector-->
+              <a href="#hover-selector">Hover</a> <!-- internal link to hover selector-->
             </li>
             <li class="ulist">
               <a href="#skewXY">SkewX/SkewY</a>
@@ -33,9 +33,27 @@
           <div id="content-container">
               <div class="content-border-1">
                 <h2 id="scale-function">Scale CSS Function</h2>
+                <p class="container-text">The scale function is capable of resizing an element relative to its
+                  original size with a multiplying factor. Scale will change the width and height so they are proportionate to each other.It is used with the
+                  transform property, like this:</p>
+                <hr>
+                <code class="code"><p>.div1 {transform: scale(1.5);}</p></code>
+                <hr>
+                <p class="container-text">This will scale up the size of the div element with the class div1 by 1.5. The following example will demonstrate this using images.</p>
+                <div class="image-container">
+                  <img src="cat-images/ca35.png" class="scale-img-1">
+                  <img src="cat-images/ca35.png" class="scale-img-2">
+                </div>
+                <p class="container-text">The left image has no scaling at all. The right image has scaling of 1.5.
+                  However, this function can have two parameters, allowing you to scale the height and width by different values. It would be simply written like this:</p>
+                <hr>
+                <code class="code"><p>.div2 {transform: scale(1.25, 1.5)}</p></code>
+                <hr>
+                <p class="container-text">This function can also be used to scale down elements in the same way.</p>
               </div>
               <div class="content-border-2">
                 <h2 id="hover-selector">Hover Selector</h2>
+                <p class="container-text"></p>
               </div>
           </div>
     </body>

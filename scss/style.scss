@@ -7,6 +7,12 @@
 
 @mixin content-border {
     border: 2.5px solid black;
+    border-radius: 1px;
+}
+
+@mixin content-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 $panel-color-1: white;
@@ -55,16 +61,29 @@ body {
     background-color: #000;
   }
 
+  hr {
+    width: 80%;
+    @include content-center;
+  }
+
   #content-container {
     width: 90%;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 15px;
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-rows: 650px 300px 300px 300px 300px;
+    @include content-center;
   }
 
+.container-text {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.code {
+  @extend .container-text;
+  font-size: 20px;
+}
 
   #heading {
     @include default-heading-format;
@@ -87,10 +106,40 @@ body {
     @include content-border;
     grid-column: 1/2;
     grid-row: 1/2;
+    background-color: $panel-color-1;
   }
 
   .content-border-2 {
     @include content-border;
     grid-column: 2/3;
     grid-row: 1/2;
+    background-color: $panel-color-1;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    width: 90%;
+    @include content-center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .scale-img-1 {
+    width: 100px;
+    height: 100px;
+    @include content-border;
+  }
+
+  .scale-img-2 {
+    @extend .scale-img-1;
+    grid-column: 2/3;
+    transform: scale(1.5);
   }

@@ -39,14 +39,29 @@ ul a:hover {
   background-color: #000;
 }
 
+hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #content-container {
   width: 90%;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 15px;
-  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-rows: 650px 300px 300px 300px 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-text, .code {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.code {
+  font-size: 20px;
 }
 
 #heading {
@@ -71,14 +86,47 @@ ul a:hover {
 
 .content-border-1 {
   border: 2.5px solid black;
+  border-radius: 1px;
   grid-column: 1/2;
   grid-row: 1/2;
+  background-color: white;
 }
 
 .content-border-2 {
   border: 2.5px solid black;
+  border-radius: 1px;
   grid-column: 2/3;
   grid-row: 1/2;
+  background-color: white;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 15px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.scale-img-1, .scale-img-2 {
+  width: 100px;
+  height: 100px;
+  border: 2.5px solid black;
+  border-radius: 1px;
+}
+
+.scale-img-2 {
+  grid-column: 2/3;
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=style.css.map */
