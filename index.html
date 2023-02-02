@@ -34,8 +34,7 @@
               <div class="content-border-1">
                 <h2 id="scale-function">Scale CSS Function</h2>
                 <p class="container-text">The scale function is capable of resizing an element relative to its
-                  original size with a multiplying factor. Scale will change the width and height so they are proportionate to each other.It is used with the
-                  transform property, like this:</p>
+                  original size with a multiplying factor. Scale will change the width and height so they are proportionate to each other.It is used with the transform property, like this:</p>
                 <hr>
                 <code class="code"><p>.div1 {transform: scale(1.5);}</p></code>
                 <hr>
@@ -53,10 +52,7 @@
               </div>
               <div class="content-border-2">
                 <h2 id="hover-selector">Hover Selector</h2>
-                <p class="container-text">The :hover selector allows you to style elements when your mouse hovers over them. You may
-                  notice it if you hover your mouse over any of the buttons in the navigation bar. For example, if you wanted
-                  the text size of all paragraph elements to increase when a cursor hovers over it, you would write it like
-                  this:</p>
+                <p class="container-text">The :hover selector allows you to style elements when your mouse hovers over them. You may notice it if you hover your mouse over any of the buttons in the navigation bar. For example, if you wanted the text size of all paragraph elements to increase when a cursor hovers over it, you would write it like this:</p>
                 <hr>
                 <code class="code"><p>p:hover {transform: scale(1.25);}</p></code>
                 <hr>
@@ -68,16 +64,39 @@
               </div>
               <div class="content-border-3">
                 <h2 id="skew-function">SkewX and SkewY Functions</h2>
-                <p class="container-text">The skewX() and skewY() functions will skew an element along their respective axis by the given angle. It is another one of the many 2D transform functions that can be used with the transform property.The syntax is the same as any other CSS function, but you want to be using the <code>deg</code> unit to specify the angle you want to skew the element by. So, if you wanted to skew one element by 20 degrees on the X-axis and another element by 20 degrees on the Y-axis, you would write it like this:</p>
+                <p class="container-text">The skewX() and skewY() functions will skew an element along their respective axis by the given angle. It is another one of the many 2D transform functions that can be used with the transform property. The syntax is the same as any other CSS function, but you want to be using the <code>deg</code> unit to specify the angle you want to skew the element by. So, if you wanted to skew one element by 20 degrees on the X-axis and another element by 20 degrees on the Y-axis, you would write it like this:</p>
                 <hr>
                 <code class="code"><p>#div1{transform: skewX(20deg)} #div2{transform: skewY(20deg)}</p></code>
                 <hr>
                 <p class="container-text">Displayed here is a preview of the two functions:</p>
-                
-
+                <div class="image-container-2">
+                  <div class="skewx-div"></div>
+                  <div id="skewedx-div"></div>
+                  <div class="skewy-div"></div>
+                  <div id="skewedy-div"></div>
+                </div>
+                <p class="container-text">In this example you can see the difference between two elements with no transform properties and two elements skewed 20 degrees on the x and y axis, respectively.</p>
               </div>
               <div class="content-border-4">
-
+                <h2 id="graphics">Graphics in CSS</h2>
+                <p class="container-text">In CSS, it is possible to create many different graphics if you have good knowledge of CSS
+                  properties. For example, with borders, you can create a triangle that looks like this:</p>
+                <div id="triangle"></div>
+                <p class="container-text">This can be achieved by changing the height and width and manipulating the borders to create a triangle shape, like this:</p>
+                <hr>
+                <div id="triangle-container">
+                  <pre><code class="code" style="font-size: 16px;">            #triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 87px solid #FF3700;
+            border-right: 0;
+          }</code></pre>
+                </div>
+                <hr>
+                <p class="container-text">The shape here is technically a rectangle. How this works is that this tiny square has a huge border and zero width or height, leaving behind just the border. Then you want to use different border properties (border-top, border-bottom, etc.) to extract a triangle out of the border. This can be done with different dimensions to make any kind of triangle.</p>
               </div>
           </div>
     </body>

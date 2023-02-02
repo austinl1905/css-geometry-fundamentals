@@ -82,28 +82,9 @@ hr {
   margin-top: 60px;
 }
 
-#scale-function {
+#scale-function, #hover-selector, #graphics, #skew-function {
   text-align: center;
   margin-bottom: 15px;
-  z-index: -1;
-}
-
-#hover-selector {
-  text-align: center;
-  margin-bottom: 15px;
-  z-index: -1;
-}
-
-#graphics {
-  text-align: center;
-  margin-bottom: 15px;
-  z-index: -1;
-}
-
-#skew-function {
-  text-align: center;
-  margin-bottom: 15px;
-  z-index: -1;
 }
 
 .content-border-1 {
@@ -126,7 +107,7 @@ hr {
   border: 2.5px solid black;
   border-radius: 1px;
   grid-column: 1/2;
-  grid-row: 7/11;
+  grid-row: 7/12;
   background-color: white;
 }
 
@@ -134,7 +115,7 @@ hr {
   border: 2.5px solid black;
   border-radius: 1px;
   grid-column: 2/3;
-  grid-row: 5/9;
+  grid-row: 5/11;
   background-color: white;
 }
 
@@ -178,6 +159,57 @@ hr {
 .scale-img-2 {
   grid-column: 2/3;
   transform: scale(1.5);
+}
+
+.skewx-div, #skewedx-div, .skewy-div, #skewedy-div {
+  width: 100px;
+  height: 100px;
+  border: 3px dashed black;
+}
+
+.skewx-div, #skewedx-div {
+  background-color: red;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.skewy-div, #skewedy-div {
+  background-color: blue;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#skewedx-div {
+  opacity: 0.5;
+  transform: skewX(20deg);
+  z-index: 1;
+  position: relative;
+}
+
+#skewedy-div {
+  opacity: 0.5;
+  transform: skewY(20deg);
+  z-index: 1;
+  position: relative;
+}
+
+#triangle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 87px solid red;
+  border-right: 0;
+}
+
+#triangle-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
